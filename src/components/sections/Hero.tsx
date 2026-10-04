@@ -77,7 +77,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-4 text-3xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl"
+            className="mb-4 text-2xl font-bold tracking-tight text-text-primary sm:text-4xl lg:text-6xl"
           >
             M.Ridho Naufal Dwinanda Pakpahan S.Kom
           </motion.h1>
@@ -88,7 +88,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mb-6 h-8 flex items-center justify-center"
           >
-            <span className="text-lg font-medium text-accent-cyan sm:text-2xl">
+            <span className="text-base font-medium text-accent-cyan sm:text-xl lg:text-2xl">
               {personalInfo.headline[currentHeadline]}
             </span>
           </motion.div>
@@ -97,7 +97,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mb-8 max-w-3xl text-sm text-text-secondary sm:text-base leading-relaxed"
+            className="mb-8 max-w-3xl text-xs text-text-secondary sm:text-base leading-relaxed"
           >
             {personalInfo.summary}
           </motion.p>
@@ -106,26 +106,26 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="mb-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4"
+            className="mb-8 flex flex-wrap items-center justify-center gap-2 sm:gap-4"
           >
             <button
               onClick={() => handleNavClick("#projects")}
-              className="btn-primary"
+              className="btn-primary !px-4 !py-2 text-xs sm:!px-6 sm:!py-3 sm:text-sm"
             >
               Lihat Project
             </button>
             <button
               onClick={() => handleNavClick("#experience")}
-              className="btn-secondary"
+              className="btn-secondary !px-4 !py-2 text-xs sm:!px-6 sm:!py-3 sm:text-sm"
             >
               Pengalaman Kerja
             </button>
             <a
               href={personalInfo.cvUrl}
               download
-              className="btn-secondary"
+              className="btn-secondary !px-4 !py-2 text-xs sm:!px-6 sm:!py-3 sm:text-sm"
             >
-              <DownloadIcon className="h-4 w-4 text-accent-cyan" />
+              <DownloadIcon className="h-3.5 w-3.5 text-accent-cyan sm:h-4 sm:w-4" />
               Download CV
             </a>
           </motion.div>

@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <button
             onClick={() => handleNavClick("#home")}
-            className="text-xl font-bold tracking-tight text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-blue/50 rounded"
+            className="text-lg font-bold tracking-tight text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-blue/50 rounded sm:text-xl"
             aria-label="Go to home"
           >
             Mr Dev

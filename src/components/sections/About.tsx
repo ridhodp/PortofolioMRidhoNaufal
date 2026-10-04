@@ -78,7 +78,7 @@ export default function About() {
               Didukung rekam jejak sebagai <strong className="text-text-primary">Asisten Laboratorium Praktikum Sistem Terdistribusi UAD</strong> dan kepemimpinan sebagai <strong className="text-text-primary">Manager Divisi Game PUBGM UAD</strong> yang berhasil meraih Juara 3 Nasional. Memiliki kemampuan problem solving, analytical thinking, komunikasi, serta adaptasi yang cepat terhadap teknologi baru.
             </p>
 
-            <div className="pt-4 grid gap-3 sm:grid-cols-2">
+            <div className="pt-4 grid gap-2 sm:grid-cols-2 sm:gap-3">
               {infoItems.map((item, index) => (
                 <motion.div
                   key={item.label}
@@ -123,7 +123,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-5 flex flex-col gap-6"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-2 sm:gap-4">
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -131,12 +131,12 @@ export default function About() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="card card-hover text-center p-5"
+                  className="card card-hover text-center p-3 sm:p-5"
                 >
-                  <p className="text-2xl font-bold gradient-text sm:text-3xl">
+                  <p className="text-xl font-bold gradient-text sm:text-3xl">
                     {stat.value}
                   </p>
-                  <p className="mt-1.5 text-xs text-text-muted leading-snug">
+                  <p className="mt-1 text-[10px] text-text-muted leading-snug sm:text-xs sm:mt-1.5">
                     {stat.label}
                   </p>
                 </motion.div>
