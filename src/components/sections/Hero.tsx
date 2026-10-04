@@ -70,7 +70,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-2 mt-4 text-[10px] font-semibold tracking-widest text-accent-blue uppercase sm:text-xs"
           >
-            Portfolio & Resume
+            Portofolio & Resume
           </motion.p>
 
           <motion.h1

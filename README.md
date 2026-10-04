@@ -1,4 +1,4 @@
-# Personal Portfolio — M. Ridho Naufal Dwinanda Pakpahan
+# Personal Portofolio — M. Ridho Naufal Dwinanda Pakpahan
 
 A modern, responsive personal portfolio website built with Next.js, TypeScript, React, and Tailwind CSS.
 
@@ -92,7 +92,7 @@ npm start
 
 ## How to Customize
 
-### Edit Portfolio Data
+### Edit Portofolio Data
 
 All portfolio content is in `src/data/portfolio.ts`. Edit this file to update:
 - Personal information
