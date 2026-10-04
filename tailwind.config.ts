@@ -11,18 +11,18 @@ const config: Config = {
     extend: {
       colors: {
         background: {
-          DEFAULT: "#080B12",
-          secondary: "#0F172A",
-          card: "#111827",
+          DEFAULT: "#0D0F14",
+          secondary: "#14171F",
+          card: "#181B25",
         },
         accent: {
-          blue: "#3B82F6",
-          cyan: "#06B6D4",
+          blue: "#E8A838",
+          cyan: "#D4652A",
         },
         text: {
-          primary: "#F8FAFC",
-          secondary: "#94A3B8",
-          muted: "#64748B",
+          primary: "#E8E4DD",
+          secondary: "#9B968C",
+          muted: "#6B6660",
         },
       },
       fontFamily: {
