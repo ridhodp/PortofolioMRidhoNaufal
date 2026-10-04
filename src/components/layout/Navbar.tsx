@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { MenuIcon, XIcon } from "@/components/ui/icons";
+import DarkModeToggle from "@/components/ui/DarkModeToggle";
 import { navItems } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 
@@ -86,6 +87,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
+            <DarkModeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="lg:hidden rounded-md p-2 text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-blue/50"
