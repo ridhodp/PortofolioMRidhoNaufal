@@ -16,7 +16,7 @@ const typeLabels = {
   work: "Work",
   internship: "Internship",
   organization: "Organization",
-  academic: "Academic",
+  academic: "Teaching Laboratory",
 };
 
 export default function Experience() {
