@@ -65,7 +65,7 @@ export default function Navbar() {
             className="text-lg font-bold tracking-tight text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-blue/50 rounded sm:text-xl"
             aria-label="Go to home"
           >
-            Mr Dev
+            &lt;Mr Dev/&gt;
           </button>
 
           <div className="hidden lg:flex lg:items-center lg:gap-1">
