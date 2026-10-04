@@ -1,0 +1,7 @@
+   ▲ Next.js 15.5.26
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.100.1:3000
+
+ ✓ Starting...
+[SyntaxError: Invalid or unexpected token]
+[?25h
