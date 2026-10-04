@@ -49,7 +49,7 @@ export default function Experience() {
                   </div>
                 </div>
 
-                <div className="ml-12 sm:ml-0 sm:w-1/2">
+                <div className="ml-10 sm:ml-0 sm:w-1/2">
                   <div
                     className={`card card-hover ${
                       index % 2 === 0 ? "sm:mr-8" : "sm:ml-8"
@@ -67,7 +67,7 @@ export default function Experience() {
                       </span>
                     </div>
 
-                    <h3 className="text-lg font-semibold text-text-primary mb-1">
+                    <h3 className="text-base font-semibold text-text-primary mb-1 sm:text-lg">
                       {exp.role}
                     </h3>
 
@@ -81,7 +81,7 @@ export default function Experience() {
                       <span>{exp.location}</span>
                     </div>
 
-                    <p className="text-sm text-text-secondary mb-4">
+                    <p className="text-xs text-text-secondary mb-4 sm:text-sm">
                       {exp.description}
                     </p>
 
@@ -89,7 +89,7 @@ export default function Experience() {
                       {exp.responsibilities.map((resp, i) => (
                         <li
                           key={i}
-                          className="flex items-start gap-2 text-sm text-text-secondary"
+                          className="flex items-start gap-2 text-xs text-text-secondary sm:text-sm"
                         >
                           <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-blue" />
                           {resp}

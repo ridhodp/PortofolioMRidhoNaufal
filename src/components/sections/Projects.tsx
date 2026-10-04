@@ -14,7 +14,7 @@ export default function Projects() {
           subtitle="Projects that demonstrate my technical skills and problem-solving abilities"
         />
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 lg:grid-cols-2 lg:gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -24,7 +24,7 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="card card-hover overflow-hidden group"
             >
-              <div className="relative h-48 mb-6 rounded-lg bg-gradient-to-br from-background-secondary to-background-card border border-white/5 overflow-hidden">
+              <div className="relative h-32 mb-4 rounded-lg bg-gradient-to-br from-background-secondary to-background-card border border-white/5 overflow-hidden sm:h-48 sm:mb-6">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <FolderIcon className="h-12 w-12 text-accent-blue/30 mx-auto mb-2" />
@@ -40,7 +40,7 @@ export default function Projects() {
 
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-text-primary mb-1">
+                  <h3 className="text-lg font-semibold text-text-primary mb-1 sm:text-xl">
                     {project.title}
                   </h3>
                   <p className="text-sm text-accent-blue">
@@ -48,7 +48,7 @@ export default function Projects() {
                   </p>
                 </div>
 
-                <p className="text-sm text-text-secondary leading-relaxed">
+                <p className="text-xs text-text-secondary leading-relaxed sm:text-sm">
                   {project.description}
                 </p>
 

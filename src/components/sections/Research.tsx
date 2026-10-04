@@ -33,7 +33,7 @@ export default function Research() {
                     <span className="badge">{item.field}</span>
                   </div>
 
-                  <h3 className="text-xl font-semibold text-text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-text-primary mb-3 sm:text-xl">
                     {item.title}
                   </h3>
 
@@ -42,7 +42,7 @@ export default function Research() {
                     <span>Target Objek Riset: {item.target}</span>
                   </div>
 
-                  <p className="text-sm text-text-secondary leading-relaxed mb-6">
+                  <p className="text-xs text-text-secondary leading-relaxed mb-6 sm:text-sm">
                     {item.description}
                   </p>
 

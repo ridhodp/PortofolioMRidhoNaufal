@@ -23,7 +23,7 @@ export default function Certificates() {
               <AwardIcon className="h-5 w-5 text-accent-blue" />
               Certifications
             </h3>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
               {certifications.map((cert, index) => (
                 <motion.div
                   key={cert.id}
@@ -60,7 +60,7 @@ export default function Certificates() {
               <BookOpenIcon className="h-5 w-5 text-accent-cyan" />
               Training
             </h3>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
               {trainings.map((training, index) => (
                 <motion.div
                   key={training.id}

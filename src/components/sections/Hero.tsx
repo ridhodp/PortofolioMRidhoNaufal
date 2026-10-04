@@ -48,7 +48,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="relative mb-6"
           >
-            <div className="relative mx-auto h-36 w-36 sm:h-44 sm:w-44 rounded-full p-1.5 bg-gradient-to-tr from-accent-blue via-accent-cyan to-accent-blue shadow-2xl shadow-accent-blue/20">
+            <div className="relative mx-auto h-28 w-28 sm:h-44 sm:w-44 rounded-full p-1.5 bg-gradient-to-tr from-accent-blue via-accent-cyan to-accent-blue shadow-2xl shadow-accent-blue/20">
               <div className="relative h-full w-full rounded-full overflow-hidden border-2 border-background bg-background-secondary">
                 <img
                   src={personalInfo.profileImage}
@@ -68,7 +68,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-2 mt-4 text-xs font-semibold tracking-widest text-accent-blue uppercase sm:text-sm"
+            className="mb-2 mt-4 text-[10px] font-semibold tracking-widest text-accent-blue uppercase sm:text-xs"
           >
             Portfolio & Resume
           </motion.p>
@@ -77,7 +77,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-4 text-2xl font-bold tracking-tight text-text-primary sm:text-4xl lg:text-6xl"
+            className="mb-4 text-xl font-bold tracking-tight text-text-primary sm:text-3xl lg:text-5xl"
           >
             M.Ridho Naufal Dwinanda Pakpahan S.Kom
           </motion.h1>
@@ -88,7 +88,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mb-6 h-8 flex items-center justify-center"
           >
-            <span className="text-base font-medium text-accent-cyan sm:text-xl lg:text-2xl">
+            <span className="text-sm font-medium text-accent-cyan sm:text-lg lg:text-xl">
               {personalInfo.headline[currentHeadline]}
             </span>
           </motion.div>
@@ -97,7 +97,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mb-8 max-w-3xl text-xs text-text-secondary sm:text-base leading-relaxed"
+            className="mb-8 max-w-3xl text-sm text-text-secondary sm:text-base leading-relaxed"
           >
             {personalInfo.summary}
           </motion.p>

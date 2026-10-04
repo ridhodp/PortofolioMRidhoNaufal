@@ -106,7 +106,7 @@ export default function Contact() {
                   Punya kebutuhan pengembangan aplikasi web, analisis keamanan sistem, atau ingin mendiskusikan peluang kerja? Kirim pesan langsung melalui tombol di bawah.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
+                <div className="flex flex-col gap-3 w-full max-w-xs sm:flex-row">
                   {personalInfo.phoneUrl && (
                     <a
                       href={personalInfo.phoneUrl}
