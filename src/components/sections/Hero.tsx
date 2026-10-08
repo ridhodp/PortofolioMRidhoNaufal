@@ -13,8 +13,8 @@ export default function Hero() {
     <section id="home" className="pb-16 pt-28 sm:pt-32 lg:pb-24 lg:pt-40">
       <div className="section-container">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-12">
-          <div className="lg:col-span-8">
-            <p className="flex items-center gap-2 text-sm text-text-secondary">
+          <div className="text-center lg:col-span-8 lg:text-left">
+            <p className="flex items-center justify-center gap-2 text-sm text-text-secondary lg:justify-start">
               <span className="h-2 w-2 rounded-full bg-emerald-500" aria-hidden="true" />
               {personalInfo.availability}
             </p>
@@ -28,11 +28,11 @@ export default function Hero() {
               {personalInfo.title}
             </p>
 
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-text-secondary">
+            <p className="mx-auto mt-6 max-w-2xl text-base lg:mx-0 leading-relaxed text-text-secondary">
               {personalInfo.summary}
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
               <a href="#projects" className="btn-primary">
                 Lihat Proyek
               </a>
