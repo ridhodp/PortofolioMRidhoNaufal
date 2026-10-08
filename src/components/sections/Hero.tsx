@@ -53,7 +53,7 @@ export default function Hero() {
               alt={personalInfo.name}
               width={480}
               height={600}
-              className="aspect-square w-28 rounded-lg border object-cover object-top sm:w-36 lg:ml-auto lg:aspect-[4/5] lg:w-full lg:max-w-xs"
+              className="aspect-square w-28 rounded-lg border object-cover object-top sm:w-36 mx-auto lg:mr-0 lg:aspect-[4/5] lg:w-full lg:max-w-xs"
             />
             <figcaption className="eyebrow mt-3 hidden lg:ml-auto lg:block lg:max-w-xs">
               {personalInfo.location}

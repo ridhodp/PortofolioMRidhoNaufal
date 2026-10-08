@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="border-t">
       <div className="section-container py-8">
-        <p className="text-sm text-text-muted">
+        <p className="text-center text-sm text-text-muted">
           &copy; {currentYear} {personalInfo.name}, S.Kom.
         </p>
       </div>
