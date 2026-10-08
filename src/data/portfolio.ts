@@ -38,16 +38,16 @@ export const personalInfo: PersonalInfo = {
 };
 
 export const navItems: NavItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Research", href: "#research" },
-  { label: "Skills", href: "#skills" },
-  { label: "Education", href: "#education" },
-  { label: "Certificates", href: "#certificates" },
-  { label: "Achievement", href: "#achievement" },
-  { label: "Contact", href: "#contact" },
+  { label: "Beranda", href: "#home" },
+  { label: "Tentang", href: "#about" },
+  { label: "Pengalaman", href: "#experience" },
+  { label: "Proyek", href: "#projects" },
+  { label: "Riset", href: "#research" },
+  { label: "Keahlian", href: "#skills" },
+  { label: "Pendidikan", href: "#education" },
+  { label: "Sertifikat", href: "#certificates" },
+  { label: "Prestasi", href: "#achievement" },
+  { label: "Kontak", href: "#contact" },
 ];
 
 export const experiences: Experience[] = [
@@ -334,7 +334,7 @@ export const achievements: Achievement[] = [
     event: "PUBG Mobile Kalijaga Championship (PMKC)",
     year: "2024",
     context:
-      "Sebagai Manager Esport Divisi Game PUBGM Berhasil Membawa Tim Esport Universitas Ahmad Dahlan Menjuarai Turnamen Nasional PMKC Pada Posisi Juara 3",
+      "Sebagai Manager Esport Divisi Game PUBGM, berhasil membawa tim Esport Universitas Ahmad Dahlan meraih Juara 3 pada turnamen nasional PMKC.",
     rank: "3rd Place",
   },
 ];

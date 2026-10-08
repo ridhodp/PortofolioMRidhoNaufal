@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { MenuIcon, XIcon } from "@/components/ui/icons";
 import DarkModeToggle from "@/components/ui/DarkModeToggle";
 import { navItems } from "@/data/portfolio";
-import { cn } from "@/lib/utils";
+import { cn, scrollToSection } from "@/lib/utils";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,40 +44,38 @@ export default function Navbar() {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    scrollToSection(href);
   };
 
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
-          ? "border-b border-white/5 bg-background/80 backdrop-blur-xl"
-          : "bg-transparent"
+        "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
+        scrolled || isOpen
+          ? "border-b bg-background/90 backdrop-blur-md"
+          : "border-b border-transparent"
       )}
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+      <div className="section-container">
+        <div className="flex h-16 items-center justify-between gap-4">
           <button
             onClick={() => handleNavClick("#home")}
-            className="text-lg font-bold tracking-tight text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-blue/50 rounded sm:text-xl"
+            className="whitespace-nowrap rounded font-mono text-sm font-semibold text-text-primary"
             aria-label="Go to home"
           >
             &lt;Mr IT Boy&apos;S/&gt;
           </button>
 
-          <div className="hidden lg:flex lg:items-center lg:gap-1">
+          <div className="hidden xl:flex xl:items-center xl:gap-1">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
+                aria-current={activeSection === item.href.slice(1) ? "true" : undefined}
                 className={cn(
-                  "rounded-md px-3 py-2 text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent-blue/50",
+                  "rounded px-2.5 py-2 text-sm transition-colors",
                   activeSection === item.href.slice(1)
-                    ? "text-accent-blue"
+                    ? "text-accent"
                     : "text-text-secondary hover:text-text-primary"
                 )}
               >
@@ -86,13 +84,14 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1">
             <DarkModeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden rounded-md p-2 text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-blue/50"
+              className="rounded-md p-2 text-text-secondary transition-colors hover:text-text-primary xl:hidden"
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
+              aria-controls="mobile-menu"
             >
               {isOpen ? <XIcon className="h-5 w-5" /> : <MenuIcon className="h-5 w-5" />}
             </button>
@@ -101,28 +100,32 @@ export default function Navbar() {
       </div>
 
       <div
+        id="mobile-menu"
+        inert={!isOpen}
         className={cn(
-          "lg:hidden overflow-hidden transition-all duration-300 ease-in-out",
-          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          "overflow-y-auto transition-[max-height,opacity] duration-300 ease-out xl:hidden",
+          isOpen ? "max-h-[calc(100dvh-4rem)] opacity-100" : "max-h-0 opacity-0"
         )}
       >
-        <div className="border-t border-white/5 bg-background/95 backdrop-blur-xl">
-          <div className="space-y-1 px-4 py-4">
-            {navItems.map((item) => (
-              <button
-                key={item.href}
-                onClick={() => handleNavClick(item.href)}
-                className={cn(
-                  "block w-full rounded-md px-3 py-2.5 text-left text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent-blue/50",
-                  activeSection === item.href.slice(1)
-                    ? "bg-accent-blue/10 text-accent-blue"
-                    : "text-text-secondary hover:bg-white/5 hover:text-text-primary"
-                )}
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
+        <div className="section-container grid gap-1 border-t py-4 sm:grid-cols-2">
+          {navItems.map((item, index) => (
+            <button
+              key={item.href}
+              onClick={() => handleNavClick(item.href)}
+              aria-current={activeSection === item.href.slice(1) ? "true" : undefined}
+              className={cn(
+                "flex items-baseline gap-3 rounded-md px-3 py-3 text-left text-base transition-colors",
+                activeSection === item.href.slice(1)
+                  ? "bg-background-secondary text-accent"
+                  : "text-text-secondary hover:bg-background-secondary hover:text-text-primary"
+              )}
+            >
+              <span className="font-mono text-xs text-text-muted">
+                {String(index).padStart(2, "0")}
+              </span>
+              {item.label}
+            </button>
+          ))}
         </div>
       </div>
     </nav>

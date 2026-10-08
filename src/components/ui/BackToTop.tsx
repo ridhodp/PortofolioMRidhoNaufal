@@ -24,7 +24,7 @@ export default function BackToTop() {
     <button
       onClick={scrollToTop}
       className={cn(
-        "fixed bottom-6 right-6 z-40 rounded-full bg-accent-blue p-3 text-white shadow-lg shadow-accent-blue/25 transition-all duration-300 hover:bg-accent-blue/90 focus:outline-none focus:ring-2 focus:ring-accent-blue/50 focus:ring-offset-2 focus:ring-offset-background",
+        "fixed bottom-[max(1.25rem,env(safe-area-inset-bottom))] right-5 z-40 rounded-full border bg-background-secondary p-3 text-text-secondary transition-all duration-300 hover:border-accent hover:text-accent",
         visible
           ? "translate-y-0 opacity-100"
           : "translate-y-4 opacity-0 pointer-events-none"

@@ -7,16 +7,14 @@ A modern, responsive personal portfolio website built with Next.js, TypeScript, 
 - **Framework:** Next.js 15 (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
 - **Icons:** Lucide React
-- **Font:** Inter (via next/font)
+- **Font:** Inter + JetBrains Mono (via next/font)
 
 ## Features
 
 - Fully responsive design (mobile-first)
-- Dark modern technology theme
+- Light / dark theme toggle
 - Smooth scroll navigation with active section indicator
-- Animated sections with Framer Motion
 - SEO optimized with metadata
 - Accessible (ARIA labels, keyboard navigation, focus states)
 - Back-to-top button
@@ -47,7 +45,8 @@ src/
 │   │   └── Contact.tsx     # Contact section
 │   └── ui/
 │       ├── BackToTop.tsx   # Back to top button
-│       └── SectionHeading.tsx # Section heading component
+│       ├── Section.tsx     # Section layout (index, title, content)
+│       └── InfoList.tsx    # Label / value rows
 ├── data/
 │   └── portfolio.ts        # All portfolio data (edit this file)
 ├── types/

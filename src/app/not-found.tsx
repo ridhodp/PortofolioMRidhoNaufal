@@ -1,11 +1,10 @@
-
 import Link from 'next/link';
 export default function NotFound() {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen'>
-      <h2 className='text-3xl font-bold mb-4'>404 - Page Not Found</h2>
-      <Link href='/' className='text-accent-blue hover:underline'>Return Home</Link>
+    <div className='section-container flex min-h-screen flex-col items-start justify-center'>
+      <p className='font-mono text-xs text-accent'>404</p>
+      <h2 className='mt-2 mb-6 text-3xl font-semibold tracking-tight'>Halaman tidak ditemukan</h2>
+      <Link href='/' className='btn-secondary'>Kembali ke beranda</Link>
     </div>
   );
 }
-

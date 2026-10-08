@@ -5,37 +5,26 @@ import { useState, useEffect } from "react";
 export default function DarkModeToggle() {
   const [isDark, setIsDark] = useState(true);
 
+  // The theme class is already set before paint by the script in layout.tsx.
   useEffect(() => {
-    const saved = localStorage.getItem("theme");
-    if (saved === "light") {
-      setIsDark(false);
-      document.documentElement.classList.add("light");
-    } else {
-      setIsDark(true);
-      document.documentElement.classList.remove("light");
-    }
+    setIsDark(!document.documentElement.classList.contains("light"));
   }, []);
 
   const toggleTheme = () => {
-    if (isDark) {
-      setIsDark(false);
-      document.documentElement.classList.add("light");
-      localStorage.setItem("theme", "light");
-    } else {
-      setIsDark(true);
-      document.documentElement.classList.remove("light");
-      localStorage.setItem("theme", "dark");
-    }
+    const next = !isDark;
+    setIsDark(next);
+    document.documentElement.classList.toggle("light", !next);
+    localStorage.setItem("theme", next ? "dark" : "light");
   };
 
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-md p-2 text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-blue/50"
+      className="rounded-md p-2 text-text-secondary transition-colors hover:text-text-primary"
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
       {isDark ? (
-        <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="5" />
           <line x1="12" x2="12" y1="1" y2="3" />
           <line x1="12" x2="12" y1="21" y2="23" />
@@ -47,7 +36,7 @@ export default function DarkModeToggle() {
           <line x1="18.36" x2="19.78" y1="5.64" y2="4.22" />
         </svg>
       ) : (
-        <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
       )}
