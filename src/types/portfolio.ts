@@ -76,6 +76,7 @@ export interface Certificate {
   issuer: string;
   year: string;
   validity?: string;
+  url?: string;
   type: "certification" | "training";
 }
 

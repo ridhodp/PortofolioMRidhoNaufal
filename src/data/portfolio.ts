@@ -291,6 +291,7 @@ export const certificates: Certificate[] = [
     issuer: "Ahmad Dahlan Language Center (ADLC)",
     year: "Juni 2026 - Juni 2027",
     validity: "Juni 2026 - Juni 2027",
+    url: "/certificates/toefl.pdf",
     type: "certification",
   },
   {
@@ -299,6 +300,7 @@ export const certificates: Certificate[] = [
     issuer: "Ahmad Dahlan Training Center (ADTC)",
     year: "Agustus 2026 - Agustus 2030",
     validity: "Agustus 2026 - Agustus 2030",
+    url: "/certificates/k3.pdf",
     type: "certification",
   },
   {
@@ -307,6 +309,15 @@ export const certificates: Certificate[] = [
     issuer: "Ahmad Dahlan Training Center (ADTC)",
     year: "Agustus 2026 - Agustus 2030",
     validity: "Agustus 2026 - Agustus 2030",
+    url: "/certificates/qhse.pdf",
+    type: "certification",
+  },
+  {
+    id: "data-analytics",
+    title: "Data Analytics Essentials",
+    issuer: "Cisco Networking Academy",
+    year: "Oktober 2026",
+    url: "/certificates/data-analytics.pdf",
     type: "certification",
   },
   {
@@ -315,6 +326,7 @@ export const certificates: Certificate[] = [
     issuer: "Ahmad Dahlan Training Center (ADTC)",
     year: "Agustus 2026 - Agustus 2030",
     validity: "Agustus 2026 - Agustus 2030",
+    url: "/certificates/k3.pdf",
     type: "training",
   },
   {
@@ -323,6 +335,7 @@ export const certificates: Certificate[] = [
     issuer: "Ahmad Dahlan Training Center (ADTC)",
     year: "Agustus 2026 - Agustus 2030",
     validity: "Agustus 2026 - Agustus 2030",
+    url: "/certificates/qhse.pdf",
     type: "training",
   },
 ];

@@ -28,7 +28,18 @@ export default function Certificates() {
                   >
                     <div className="min-w-0">
                       <p className="text-sm font-medium text-text-primary sm:text-base">
-                        {cert.title}
+                        {cert.url ? (
+                          <a
+                            href={cert.url}
+                            className="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {cert.title}
+                          </a>
+                        ) : (
+                          cert.title
+                        )}
                       </p>
                       <p className="mt-0.5 text-sm text-text-secondary">
                         {cert.issuer}
