@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "M. Ridho Naufal Dwinanda Pakpahan",
     description:
-      "Web Developer | Cyber Security Enthusiast | Security Researcher",
+      "Web Developer | Cyber Security Enthusiast | AI Enthusiast | Security Researcher",
   },
   robots: {
     index: true,

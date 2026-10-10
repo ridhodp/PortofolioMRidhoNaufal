@@ -16,7 +16,7 @@ export const personalInfo: PersonalInfo = {
   firstName: "M. Ridho Naufal",
   lastName: "Dwinanda Pakpahan",
   monogram: "RN",
-  title: "Junior Web Developer & Cyber Security Enthusiast",
+  title: "Junior Web Developer, Cyber Security Enthusiast & AI Enthusiast",
   headline: [
     "Junior Web Developer",
     "Penelaah Teknis Kebijakan",
