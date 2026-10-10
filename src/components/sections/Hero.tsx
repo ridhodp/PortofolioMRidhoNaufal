@@ -47,13 +47,8 @@ export default function Hero() {
           </div>
 
           <figure className="order-first lg:order-none lg:col-span-5">
-            <div className="relative mx-auto w-40 sm:w-48 lg:mr-0 lg:w-full lg:max-w-sm">
-              {/* Offset accent frame peeking out behind the photo card. */}
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 translate-x-2.5 translate-y-2.5 rounded-2xl border-2 border-accent/60 lg:-translate-x-4 lg:translate-y-4"
-              />
-              <div className="relative rounded-2xl border bg-background-secondary p-1.5 shadow-card">
+            <div className="mx-auto w-40 sm:w-48 lg:mr-0 lg:w-full lg:max-w-sm">
+              <div className="rounded-2xl bg-background-secondary p-2 shadow-card ring-1 ring-accent/40">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={personalInfo.profileImage}
@@ -64,7 +59,7 @@ export default function Hero() {
                 />
               </div>
             </div>
-            <figcaption className="eyebrow mt-7 hidden lg:ml-auto lg:block lg:max-w-sm">
+            <figcaption className="eyebrow mt-4 hidden lg:ml-auto lg:block lg:max-w-sm">
               {personalInfo.location}
             </figcaption>
           </figure>
