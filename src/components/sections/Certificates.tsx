@@ -19,7 +19,7 @@ export default function Certificates() {
                 href={cert.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex aspect-[4/3] items-center justify-center rounded-lg border bg-background-secondary p-3 transition-colors hover:border-accent/40"
+                className="flex aspect-[4/3] items-center justify-center rounded-lg border bg-background-secondary p-3 shadow-card transition-colors hover:border-accent/40"
               >
                 {/* Preview is page 1 of the PDF, pre-rendered to a .jpg beside it. */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}

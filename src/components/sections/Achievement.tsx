@@ -13,7 +13,7 @@ export default function Achievement() {
         {achievements.map((achievement) => (
           <article
             key={achievement.id}
-            className="rounded-lg border bg-background-secondary p-6 sm:p-8"
+            className="rounded-lg border bg-background-secondary p-6 shadow-card sm:p-8"
           >
             <p className="font-mono text-xs text-text-muted">
               {achievement.year}

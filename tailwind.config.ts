@@ -28,6 +28,9 @@ const config: Config = {
           muted: token("fg-3"),
         },
       },
+      boxShadow: {
+        card: "var(--card-shadow)",
+      },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
