@@ -1,18 +1,12 @@
 import { DownloadIcon } from "@/components/ui/icons";
 import { personalInfo } from "@/data/portfolio";
 
-const stats = [
-  { value: "3.54", label: "IPK Cumlaude (4.00)" },
-  { value: "Komdigi RI", label: "Maganghub Penelaah Kebijakan" },
-  { value: "3+", label: "Pengalaman Kerja & Asistensi" },
-  { value: "Juara 3", label: "Turnamen Esport PMKC 2024" },
-];
 
 export default function Hero() {
   return (
-    <section id="home" className="pb-16 pt-28 sm:pt-32 lg:pb-24 lg:pt-40">
+    <section id="home" className="pb-16 pt-28 sm:pt-32 lg:flex lg:min-h-[100svh] lg:items-center lg:py-28">
       <div className="section-container">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-12">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-center lg:gap-12">
           <div className="text-center lg:col-span-7 lg:text-left">
             <p className="flex items-center justify-center gap-2 text-sm text-text-secondary lg:justify-start">
               <span className="h-2 w-2 rounded-full bg-emerald-500" aria-hidden="true" />
@@ -64,22 +58,6 @@ export default function Hero() {
             </figcaption>
           </figure>
         </div>
-
-        <dl className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-lg border bg-line shadow-card lg:mt-20 lg:grid-cols-4">
-          {stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="flex flex-col-reverse justify-end gap-1 bg-background p-4 sm:p-5"
-            >
-              <dt className="text-xs leading-snug text-text-muted sm:text-sm">
-                {stat.label}
-              </dt>
-              <dd className="text-xl font-semibold tracking-tight text-text-primary sm:text-2xl">
-                {stat.value}
-              </dd>
-            </div>
-          ))}
-        </dl>
       </div>
     </section>
   );
