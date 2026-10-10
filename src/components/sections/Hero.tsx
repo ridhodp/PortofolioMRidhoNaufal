@@ -8,12 +8,7 @@ export default function Hero() {
       <div className="section-container">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center lg:gap-12">
           <div className="text-center lg:col-span-7 lg:text-left">
-            <p className="flex items-center justify-center gap-2 text-sm text-text-secondary lg:justify-start">
-              <span className="h-2 w-2 rounded-full bg-emerald-500" aria-hidden="true" />
-              {personalInfo.availability}
-            </p>
-
-            <h1 className="mt-6 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
+            <h1 className="text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
               {personalInfo.name}
               <span className="text-text-muted">, S.Kom</span>
             </h1>

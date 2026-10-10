@@ -30,7 +30,6 @@ export const personalInfo: PersonalInfo = {
   phoneUrl: "https://wa.me/6285229989866",
   location: "Kab. Karimun, Kepulauan Riau / D.I. Yogyakarta",
   address: "Jl Bhakti No.34 Bukit Senang RT 002/ RW 006 Tanjung Balai Kota",
-  availability: "Terbuka untuk Peluang Kerja & Kolaborasi",
   githubUrl: "#",
   linkedinUrl: "#",
   profileImage: "/profile.jpg",
