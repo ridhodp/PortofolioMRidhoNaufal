@@ -28,11 +28,11 @@ export default function Contact() {
       title="Kontak"
       subtitle="Tertarik berdiskusi mengenai web development, cyber security, teknologi AI, atau peluang kerja sama?"
     >
-      <p className="max-w-2xl text-balance text-xl font-medium leading-snug tracking-tight text-text-primary sm:text-2xl">
+      <p className="mx-auto max-w-2xl text-balance text-center text-xl font-medium leading-snug tracking-tight text-text-primary sm:text-2xl">
         Saya terbuka untuk peluang profesional baru, kolaborasi proyek teknologi, konsultasi sistem, maupun bertukar wawasan seputar IT dan keamanan siber.
       </p>
 
-      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
         {personalInfo.phoneUrl && (
           <a
             href={personalInfo.phoneUrl}
