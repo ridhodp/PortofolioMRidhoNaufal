@@ -320,32 +320,6 @@ export const certificates: Certificate[] = [
     url: "/certificates/data-analytics.pdf",
     type: "certification",
   },
-  {
-    id: "k3-training",
-    title: "Metodologi Pelatihan - Awareness Dasar K3",
-    issuer: "Ahmad Dahlan Training Center (ADTC)",
-    year: "Agustus 2026 - Agustus 2030",
-    validity: "Agustus 2026 - Agustus 2030",
-    url: "/certificates/k3.pdf",
-    type: "training",
-  },
-  {
-    id: "qhse-training",
-    title: "Metodologi Pelatihan - Awareness QHSE",
-    issuer: "Ahmad Dahlan Training Center (ADTC)",
-    year: "Agustus 2026 - Agustus 2030",
-    validity: "Agustus 2026 - Agustus 2030",
-    url: "/certificates/qhse.pdf",
-    type: "training",
-  },
-  {
-    id: "seminar-kepemimpinan",
-    title: "Seminar Nasional Kepemimpinan: Kekuatan Gen Z dalam Evolusi Politik Digital",
-    issuer: "Ilmu Komunikasi Universitas Ahmad Dahlan",
-    year: "Juli 2025",
-    url: "/certificates/seminar-kepemimpinan.pdf",
-    type: "training",
-  },
 ];
 
 export const achievements: Achievement[] = [
