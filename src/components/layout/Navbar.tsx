@@ -108,7 +108,7 @@ export default function Navbar() {
         )}
       >
         <div className="section-container grid gap-1 border-t py-4 sm:grid-cols-2">
-          {navItems.map((item, index) => (
+          {navItems.map((item) => (
             <button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
@@ -120,9 +120,6 @@ export default function Navbar() {
                   : "text-text-secondary hover:bg-background-secondary hover:text-text-primary"
               )}
             >
-              <span className="font-mono text-xs text-text-muted">
-                {String(index).padStart(2, "0")}
-              </span>
               {item.label}
             </button>
           ))}

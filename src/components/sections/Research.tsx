@@ -5,7 +5,6 @@ export default function Research() {
   return (
     <Section
       id="research"
-      index="04"
       title="Penelitian Tugas Akhir"
       subtitle="Riset akademik di bidang keamanan informasi dan penetration testing website."
     >

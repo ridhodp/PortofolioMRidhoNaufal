@@ -1,35 +1,26 @@
 interface SectionProps {
   id: string;
-  index: string;
   title: string;
   subtitle?: string;
   children: React.ReactNode;
 }
 
-export default function Section({
-  id,
-  index,
-  title,
-  subtitle,
-  children,
-}: SectionProps) {
+export default function Section({ id, title, subtitle, children }: SectionProps) {
   return (
     <section id={id} className="scroll-mt-16 border-t">
-      <div className="section-container grid gap-8 py-16 sm:py-20 lg:grid-cols-12 lg:gap-12 lg:py-24">
-        <header className="lg:col-span-4">
-          <div className="lg:sticky lg:top-24">
-            <p className="font-mono text-xs text-accent">{index}</p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-text-primary sm:text-3xl">
-              {title}
-            </h2>
-            {subtitle && (
-              <p className="mt-3 max-w-md text-sm leading-relaxed text-text-secondary sm:text-base lg:max-w-xs">
-                {subtitle}
-              </p>
-            )}
-          </div>
+      <div className="section-container py-16 sm:py-20 lg:py-24">
+        <header className="mx-auto max-w-2xl text-center">
+          <h2 className="text-2xl font-semibold tracking-tight text-text-primary sm:text-3xl">
+            {title}
+          </h2>
+          <span aria-hidden="true" className="mx-auto mt-4 block h-0.5 w-10 rounded-full bg-accent" />
+          {subtitle && (
+            <p className="mt-4 text-sm leading-relaxed text-text-secondary sm:text-base">
+              {subtitle}
+            </p>
+          )}
         </header>
-        <div className="min-w-0 lg:col-span-8">{children}</div>
+        <div className="mx-auto mt-10 min-w-0 max-w-3xl sm:mt-12">{children}</div>
       </div>
     </section>
   );

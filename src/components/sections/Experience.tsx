@@ -12,7 +12,6 @@ export default function Experience() {
   return (
     <Section
       id="experience"
-      index="02"
       title="Pengalaman"
       subtitle="Pengalaman profesional, akademik, dan organisasi yang membentuk karier saya."
     >

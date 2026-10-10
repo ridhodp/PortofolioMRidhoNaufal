@@ -5,7 +5,6 @@ export default function Skills() {
   return (
     <Section
       id="skills"
-      index="05"
       title="Keahlian"
       subtitle="Kompetensi teknis yang dikembangkan melalui pengalaman kerja di instansi, riset, dan akademik."
     >

@@ -5,7 +5,6 @@ export default function Achievement() {
   return (
     <Section
       id="achievement"
-      index="08"
       title="Prestasi"
       subtitle="Rekam jejak kepemimpinan dalam kompetisi tingkat nasional."
     >

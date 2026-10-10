@@ -5,15 +5,14 @@ export default function Projects() {
   return (
     <Section
       id="projects"
-      index="03"
       title="Proyek"
       subtitle="Proyek yang menunjukkan kemampuan teknis dan pemecahan masalah."
     >
       <ol className="divide-y">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <li key={project.id} className="py-8 first:pt-0 last:pb-0">
             <p className="font-mono text-xs text-text-muted">
-              {String(index + 1).padStart(2, "0")} / {project.category}
+              {project.category}
             </p>
             <h3 className="mt-2 text-xl font-semibold leading-snug tracking-tight text-text-primary sm:text-2xl">
               {project.title}

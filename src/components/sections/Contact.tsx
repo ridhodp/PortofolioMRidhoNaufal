@@ -25,7 +25,6 @@ export default function Contact() {
   return (
     <Section
       id="contact"
-      index="09"
       title="Kontak"
       subtitle="Tertarik berdiskusi mengenai web development, cyber security, teknologi AI, atau peluang kerja sama?"
     >

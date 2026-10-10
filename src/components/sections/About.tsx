@@ -12,7 +12,6 @@ export default function About() {
   return (
     <Section
       id="about"
-      index="01"
       title="Tentang Saya"
       subtitle="Profil profesional, latar belakang akademik, dan keahlian teknis."
     >

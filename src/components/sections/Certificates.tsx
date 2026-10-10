@@ -7,7 +7,6 @@ export default function Certificates() {
   return (
     <Section
       id="certificates"
-      index="07"
       title="Sertifikasi"
       subtitle="Sertifikasi kompetensi dari lembaga dan institusi resmi."
     >

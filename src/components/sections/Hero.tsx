@@ -13,7 +13,7 @@ export default function Hero() {
     <section id="home" className="pb-16 pt-28 sm:pt-32 lg:pb-24 lg:pt-40">
       <div className="section-container">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-12">
-          <div className="text-center lg:col-span-8 lg:text-left">
+          <div className="text-center lg:col-span-7 lg:text-left">
             <p className="flex items-center justify-center gap-2 text-sm text-text-secondary lg:justify-start">
               <span className="h-2 w-2 rounded-full bg-emerald-500" aria-hidden="true" />
               {personalInfo.availability}
@@ -46,16 +46,25 @@ export default function Hero() {
             </div>
           </div>
 
-          <figure className="order-first lg:order-none lg:col-span-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={personalInfo.profileImage}
-              alt={personalInfo.name}
-              width={480}
-              height={600}
-              className="aspect-square w-28 rounded-lg border object-cover shadow-card object-top sm:w-36 mx-auto lg:mr-0 lg:aspect-[4/5] lg:w-full lg:max-w-xs"
-            />
-            <figcaption className="eyebrow mt-3 hidden lg:ml-auto lg:block lg:max-w-xs">
+          <figure className="order-first lg:order-none lg:col-span-5">
+            <div className="relative mx-auto w-40 sm:w-48 lg:mr-0 lg:w-full lg:max-w-sm">
+              {/* Offset accent frame peeking out behind the photo card. */}
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 translate-x-2.5 translate-y-2.5 rounded-2xl border-2 border-accent/60 lg:-translate-x-4 lg:translate-y-4"
+              />
+              <div className="relative rounded-2xl border bg-background-secondary p-1.5 shadow-card">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={personalInfo.profileImage}
+                  alt={personalInfo.name}
+                  width={480}
+                  height={600}
+                  className="aspect-square w-full rounded-xl object-cover object-top lg:aspect-[4/5]"
+                />
+              </div>
+            </div>
+            <figcaption className="eyebrow mt-7 hidden lg:ml-auto lg:block lg:max-w-sm">
               {personalInfo.location}
             </figcaption>
           </figure>

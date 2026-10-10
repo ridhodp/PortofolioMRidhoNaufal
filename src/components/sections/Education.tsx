@@ -5,7 +5,6 @@ export default function Education() {
   return (
     <Section
       id="education"
-      index="06"
       title="Pendidikan"
       subtitle="Latar belakang akademik dan pencapaian."
     >
