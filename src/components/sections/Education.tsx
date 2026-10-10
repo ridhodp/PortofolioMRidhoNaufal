@@ -34,7 +34,7 @@ export default function Education() {
 
               {edu.gpa && (
                 <p className="mt-3 font-mono text-sm text-text-secondary">
-                  Nilai {edu.gpa} / {edu.gpaScale}
+                  {edu.gpaScale === "4.00" ? "IPK" : "Nilai"} {edu.gpa} / {edu.gpaScale}
                 </p>
               )}
 

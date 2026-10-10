@@ -102,7 +102,7 @@ export const experiences: Experience[] = [
     role: "Manager Esport Divisi Game PUBG Mobile",
     organization: "Esport Universitas Ahmad Dahlan",
     location: "D.I. Yogyakarta, Indonesia",
-    period: "2024",
+    period: "April 2024 - Agustus 2025",
     description:
       "Memimpin divisi game PUBGM UAD, menyusun strategi latihan, mengelola roster pemain, dan berhasil membawa tim meraih prestasi Juara 3 Nasional.",
     responsibilities: [
