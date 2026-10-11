@@ -319,6 +319,14 @@ export const certificates: Certificate[] = [
     url: "/certificates/data-analytics.pdf",
     type: "certification",
   },
+  {
+    id: "ccep",
+    title: "Certified Cybersecurity Educator Professional (CCEP)",
+    issuer: "Red Team Leaders",
+    year: "Oktober 2026",
+    url: "/certificates/CCEP Sertifikat - M.Ridho Naufal D.P S.Kom.pdf",
+    type: "certification",
+  },
 ];
 
 export const achievements: Achievement[] = [
