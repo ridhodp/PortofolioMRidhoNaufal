@@ -4,7 +4,7 @@ import InfoList from "@/components/ui/InfoList";
 
 const infoItems = [
   { label: "Pendidikan", value: "S1 Teknik Informatika UAD (Cumlaude)" },
-  { label: "Fokus Utama", value: "Web Development, Cyber Security & AI" },
+  { label: "Fokus Minat", value: "Web Development, Cyber Security & AI" },
   { label: "Domisili", value: personalInfo.location },
 ];
 
