@@ -2,10 +2,11 @@ interface SectionProps {
   id: string;
   title: string;
   subtitle?: string;
+  wide?: boolean;
   children: React.ReactNode;
 }
 
-export default function Section({ id, title, subtitle, children }: SectionProps) {
+export default function Section({ id, title, subtitle, wide, children }: SectionProps) {
   return (
     <section id={id} className="scroll-mt-16 border-t">
       <div className="section-container py-16 sm:py-20 lg:py-24">
@@ -20,7 +21,7 @@ export default function Section({ id, title, subtitle, children }: SectionProps)
             </p>
           )}
         </header>
-        <div className="mx-auto mt-10 min-w-0 max-w-3xl sm:mt-12">{children}</div>
+        <div className={`mx-auto mt-10 min-w-0 sm:mt-12 ${wide ? "max-w-5xl" : "max-w-3xl"}`}>{children}</div>
       </div>
     </section>
   );

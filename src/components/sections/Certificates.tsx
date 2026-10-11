@@ -9,8 +9,9 @@ export default function Certificates() {
       id="certificates"
       title="Sertifikasi"
       subtitle="Sertifikasi kompetensi dari lembaga dan institusi resmi."
+      wide
     >
-      <ul className="grid gap-6 sm:grid-cols-2">
+      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {certifications.map((cert) => (
           <li key={cert.id}>
             {cert.url && (
