@@ -327,6 +327,14 @@ export const certificates: Certificate[] = [
     url: "/certificates/CCEP Sertifikat - M.Ridho Naufal D.P S.Kom.pdf",
     type: "certification",
   },
+  {
+    id: "magang-diskominfostaper",
+    title: "Sertifikat Praktek Magang",
+    issuer: "Diskominfostaper Kabupaten Karimun",
+    year: "November 2025",
+    url: "/certificates/Sertifikat Penghargaan Magang - M.Ridho Naufal Dwinanda Pakpahan.pdf",
+    type: "certification",
+  },
 ];
 
 export const achievements: Achievement[] = [
