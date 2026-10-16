@@ -33,7 +33,7 @@ export const personalInfo: PersonalInfo = {
   githubUrl: "#",
   linkedinUrl: "#",
   profileImage: "/profile.jpg",
-  cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P.pdf",
+  cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P, S.Kom.pdf",
 };
 
 export const navItems: NavItem[] = [
