@@ -7,8 +7,8 @@ export default function Certificates() {
   return (
     <Section
       id="certificates"
-      title="Sertifikasi"
-      subtitle="Sertifikasi kompetensi dari lembaga dan institusi resmi."
+      title="Sertifikasi & Pelatihan"
+      subtitle="Sertifikasi kompetensi dan pelatihan profesional dari lembaga dan institusi resmi."
       wide
     >
       <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
