@@ -346,6 +346,10 @@ export const achievements: Achievement[] = [
     context:
       "Sebagai Manager Esport Divisi Game PUBGM, berhasil membawa tim Esport Universitas Ahmad Dahlan meraih Juara 3 pada turnamen nasional PMKC.",
     rank: "3rd Place",
+    images: [
+      { src: "/achievements/Dokumentasi Juara 3 PMKC.jpg", caption: "Dokumentasi Juara 3 PMKC 2024" },
+      { src: "/achievements/Sertifikat Apresiasi Manager PUBG Mobile E-Sports UAD.jpg", caption: "Sertifikat Apresiasi Manager PUBG Mobile E-Sports UAD 2024/2025" },
+    ],
   },
 ];
 

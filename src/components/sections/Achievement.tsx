@@ -26,6 +26,32 @@ export default function Achievement() {
             <p className="mt-4 text-sm leading-relaxed text-text-secondary sm:text-base">
               {achievement.context}
             </p>
+            {achievement.images && (
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                {achievement.images.map((image) => (
+                  <figure key={image.src}>
+                    <a
+                      href={image.src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex aspect-[4/3] items-center justify-center rounded-lg border bg-background p-2 transition-colors hover:border-accent/40"
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={image.src}
+                        alt={image.caption}
+                        loading="lazy"
+                        decoding="async"
+                        className="max-h-full max-w-full rounded object-contain"
+                      />
+                    </a>
+                    <figcaption className="mt-2 text-xs text-text-muted sm:text-sm">
+                      {image.caption}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </div>

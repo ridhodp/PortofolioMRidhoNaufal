@@ -86,6 +86,7 @@ export interface Achievement {
   year: string;
   context: string;
   rank: string;
+  images?: { src: string; caption: string }[];
 }
 
 export interface SocialLink {
