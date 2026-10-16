@@ -14,10 +14,10 @@ export default function Achievement() {
             key={achievement.id}
             className="rounded-lg border bg-background-secondary p-6 shadow-card sm:p-8"
           >
+            <p className="font-mono text-xs text-text-muted">
+              {achievement.year}
+            </p>
             <header className="text-center">
-              <p className="font-mono text-xs text-text-muted">
-                {achievement.year}
-              </p>
               <p className="mt-3 text-3xl font-semibold tracking-tight text-accent sm:text-4xl">
                 {achievement.title}
               </p>
