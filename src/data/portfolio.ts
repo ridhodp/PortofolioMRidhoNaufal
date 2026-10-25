@@ -28,7 +28,7 @@ export const personalInfo: PersonalInfo = {
   email: "ridhopakpahan@gmail.com",
   phone: "085229989866",
   phoneUrl: "https://wa.me/6285229989866",
-  location: "Kab. Karimun, Kepulauan Riau / D.I. Yogyakarta",
+  location: "Tanah Abang, Kota Administrasi Jakarta Pusat",
   address: "Jl Bhakti No.34 Bukit Senang RT 002/ RW 006 Tanjung Balai Kota",
   githubUrl: "#",
   linkedinUrl: "#",
