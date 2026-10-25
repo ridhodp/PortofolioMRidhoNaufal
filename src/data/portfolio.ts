@@ -31,7 +31,7 @@ export const personalInfo: PersonalInfo = {
   location: "Tanah Abang, Kota Administrasi Jakarta Pusat",
   address: "Jl Tanah Abang 5 No.54 F, RT.14/RW.2 Petojo Sel., Kecamatan Gambir, Kota Jakarta Pusat DKI Jakarta",
   githubUrl: "#",
-  linkedinUrl: "#",
+  linkedinUrl: "https://www.linkedin.com/in/m-ridho-naufal-dwinanda-pakpahan-9296662a2/",
   profileImage: "/profile.jpg",
   cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P, S.Kom.pdf",
 };
@@ -383,7 +383,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     platform: "LinkedIn",
-    url: "#",
+    url: "https://www.linkedin.com/in/m-ridho-naufal-dwinanda-pakpahan-9296662a2/",
     icon: "Linkedin",
   },
   {
