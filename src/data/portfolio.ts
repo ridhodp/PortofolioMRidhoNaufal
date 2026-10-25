@@ -335,6 +335,23 @@ export const certificates: Certificate[] = [
     url: "/certificates/Sertifikat Penghargaan Magang - M.Ridho Naufal Dwinanda Pakpahan.pdf",
     type: "certification",
   },
+  {
+    id: "data-science",
+    title: "Data Science Essentials with Python",
+    issuer: "Cisco Networking Academy",
+    year: "Oktober 2026",
+    url: "/certificates/Data Science Essentials.pdf",
+    type: "certification",
+  },
+  {
+    id: "asisten-praktikum",
+    title: "Sertifikat Asisten Praktikum",
+    issuer: "Laboratorium Komputer S1 Informatika Universitas Ahmad Dahlan",
+    year: "Juli 2026",
+    // Image, not PDF: the preview falls back to the file itself.
+    url: "/certificates/Sertifikat Asisten Praktikum - M.Ridho Naufal D.P.jpeg",
+    type: "certification",
+  },
 ];
 
 export const achievements: Achievement[] = [
