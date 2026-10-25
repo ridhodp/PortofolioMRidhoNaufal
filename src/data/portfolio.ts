@@ -24,7 +24,7 @@ export const personalInfo: PersonalInfo = {
     "Cloud Computing & AI Specialist",
   ],
   summary:
-    "Lulusan S1 Teknik Informatika Universitas Ahmad Dahlan berpredikat Cumlaude (IPK 3.54/4.00). Berpengalaman sebagai Penelaah Teknis Kebijakan di Biro Perencanaan Kementerian Komunikasi dan Digital RI dalam pengembangan proyek website berbasis AI LLM untuk review dokumen TOR & RAB, serta Junior Web Developer Intern di Diskominfostaper Kab. Karimun dalam membangun Sistem Buku Tamu Digital. Memiliki kompetensi mendalam di Web Development, Cyber Security & Penetration Testing, Cloud Computing (GCP), Database Management, dan Artificial Intelligence.",
+    "Lulusan S1 Teknik Informatika Universitas Ahmad Dahlan berpredikat Cumlaude (IPK 3.54/4.00). Berpengalaman sebagai Penelaah Teknis Kebijakan di Biro Perencanaan Kementerian Komunikasi dan Digital RI dalam mengembangkan website berbasis AI LLM untuk review dokumen TOR & RAB, serta Junior Web Developer Intern di Diskominfostaper Kab. Karimun dalam membangun Sistem Buku Tamu Digital. Berfokus pada Web Development, Cyber Security & Penetration Testing, serta Data dan Artificial Intelligence, didukung sertifikasi Data Science, Data Analytics (Cisco), dan CCEP.",
   email: "ridhopakpahan@gmail.com",
   phone: "085229989866",
   phoneUrl: "https://wa.me/6285229989866",
