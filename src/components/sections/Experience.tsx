@@ -4,7 +4,7 @@ import Section from "@/components/ui/Section";
 const typeLabels = {
   work: "Kerja",
   internship: "Magang",
-  organization: "Organisasi",
+  organization: "Komunitas",
   academic: "Asisten Lab",
 };
 
@@ -13,7 +13,7 @@ export default function Experience() {
     <Section
       id="experience"
       title="Pengalaman"
-      subtitle="Pengalaman profesional, akademik, dan organisasi yang membentuk karier saya."
+      subtitle="Pengalaman profesional, akademik, dan komunitas yang membentuk karier saya."
     >
       <ol className="divide-y">
         {experiences.map((exp) => (
