@@ -6,9 +6,6 @@ import InfoList from "@/components/ui/InfoList";
 export default function Contact() {
   const contactItems = [
     { label: "Email", value: personalInfo.email, href: `mailto:${personalInfo.email}` },
-    ...(personalInfo.phone
-      ? [{ label: "WhatsApp", value: personalInfo.phone, href: personalInfo.phoneUrl }]
-      : []),
     {
       label: "Alamat",
       value: (
