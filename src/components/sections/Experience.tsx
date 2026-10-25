@@ -2,7 +2,7 @@ import { experiences } from "@/data/portfolio";
 import Section from "@/components/ui/Section";
 
 const typeLabels = {
-  work: "Kerja",
+  work: "MagangHub",
   internship: "Magang",
   organization: "Komunitas",
   academic: "Asisten Lab",
