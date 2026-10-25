@@ -29,7 +29,7 @@ export const personalInfo: PersonalInfo = {
   phone: "085229989866",
   phoneUrl: "https://wa.me/6285229989866",
   location: "Tanah Abang, Kota Administrasi Jakarta Pusat",
-  address: "Jl Bhakti No.34 Bukit Senang RT 002/ RW 006 Tanjung Balai Kota",
+  address: "Jl Tanah Abang 5 No.54 F, RT.14/RW.2 Petojo Sel., Kecamatan Gambir, Kota Jakarta Pusat DKI Jakarta",
   githubUrl: "#",
   linkedinUrl: "#",
   profileImage: "/profile.jpg",
