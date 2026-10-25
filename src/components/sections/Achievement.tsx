@@ -6,7 +6,7 @@ export default function Achievement() {
     <Section
       id="achievement"
       title="Prestasi"
-      subtitle="Rekam jejak kepemimpinan dalam kompetisi tingkat nasional."
+      subtitle="Pencapaian dan apresiasi sebagai Manager Esport PUBG Mobile Universitas Ahmad Dahlan."
     >
       <div className="space-y-6">
         {achievements.map((achievement) => (
