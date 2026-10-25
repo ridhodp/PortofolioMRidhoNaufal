@@ -26,10 +26,10 @@ export default function Contact() {
     <Section
       id="contact"
       title="Kontak"
-      subtitle="Tertarik berdiskusi mengenai web development, cyber security, teknologi AI, atau peluang kerja sama?"
+      subtitle="Tertarik berdiskusi mengenai web development, cyber security, data, dan AI, atau peluang kerja sama?"
     >
       <p className="mx-auto max-w-2xl text-balance text-center text-xl font-medium leading-snug tracking-tight text-text-primary sm:text-2xl">
-        Saya terbuka untuk peluang profesional baru, kolaborasi proyek teknologi, konsultasi sistem, maupun bertukar wawasan seputar IT dan keamanan siber.
+        Saya terbuka untuk peluang profesional baru, kolaborasi proyek teknologi, konsultasi sistem, maupun bertukar wawasan seputar IT, keamanan siber, data, dan kecerdasan buatan (AI).
       </p>
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
