@@ -38,14 +38,16 @@ export default function Hero() {
           <figure className="order-first lg:order-none lg:col-span-5">
             <div className="mx-auto w-40 sm:w-48 lg:mr-0 lg:w-full lg:max-w-sm">
               <div className="rounded-2xl bg-background-secondary p-2 shadow-card ring-1 ring-accent/40">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={personalInfo.profileImage}
-                  alt={personalInfo.name}
-                  width={480}
-                  height={600}
-                  className="aspect-square w-full rounded-xl object-cover object-top lg:aspect-[4/5]"
-                />
+                <div className="overflow-hidden rounded-xl">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={personalInfo.profileImage}
+                    alt={personalInfo.name}
+                    width={854}
+                    height={1280}
+                    className="aspect-square w-full animate-step-forward object-cover object-[50%_30%] [transform-origin:54%_34%] lg:aspect-[4/5]"
+                  />
+                </div>
               </div>
             </div>
             <figcaption className="eyebrow mt-4 hidden lg:ml-auto lg:block lg:max-w-sm">

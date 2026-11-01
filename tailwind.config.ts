@@ -28,6 +28,16 @@ const config: Config = {
           muted: token("fg-3"),
         },
       },
+      keyframes: {
+        // Slow push-in toward the face, so the photo seems to step forward.
+        "step-forward": {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.3)" },
+        },
+      },
+      animation: {
+        "step-forward": "step-forward 9s ease-in-out infinite alternate",
+      },
       boxShadow: {
         card: "var(--card-shadow)",
       },
