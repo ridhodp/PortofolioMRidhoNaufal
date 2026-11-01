@@ -31,8 +31,8 @@ const config: Config = {
       keyframes: {
         // Slow push-in toward the face, so the photo seems to step forward.
         "step-forward": {
-          "0%": { transform: "scale(1)" },
-          "100%": { transform: "scale(1.3)" },
+          "0%": { transform: "scale(var(--zoom-from, 1))" },
+          "100%": { transform: "scale(var(--zoom-to, 1.3))" },
         },
       },
       animation: {

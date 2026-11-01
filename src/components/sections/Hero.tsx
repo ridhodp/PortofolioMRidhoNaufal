@@ -45,7 +45,7 @@ export default function Hero() {
                     alt={personalInfo.name}
                     width={854}
                     height={1280}
-                    className="aspect-square w-full animate-step-forward object-cover object-[50%_30%] [transform-origin:54%_34%] lg:aspect-[4/5]"
+                    className="aspect-square w-full animate-step-forward object-cover object-[50%_30%] [transform-origin:54%_34%] [--zoom-from:1.6] [--zoom-to:2] lg:aspect-[4/5] lg:[--zoom-from:1] lg:[--zoom-to:1.3]"
                   />
                 </div>
               </div>
