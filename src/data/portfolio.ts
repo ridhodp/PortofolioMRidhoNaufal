@@ -227,6 +227,7 @@ export const skillCategories: SkillCategory[] = [
       "Google Cloud Platform (GCP)",
       "Cloud Computing",
       "Machine Learning",
+      "Deep Learning",
       "Sistem Terdistribusi",
     ],
   },
