@@ -37,15 +37,25 @@ export default function Hero() {
 
           <figure className="order-first lg:order-none lg:col-span-5">
             <div className="mx-auto w-60 sm:w-72 lg:mr-0 lg:w-full lg:max-w-sm">
-              <div className="origin-bottom animate-swagger overflow-hidden rounded-3xl shadow-card">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={personalInfo.profileImage}
-                  alt={personalInfo.name}
-                  width={854}
-                  height={1280}
-                  className="aspect-[4/5] w-full animate-step-forward object-cover object-[50%_30%] [transform-origin:54%_34%] [--zoom-from:1.45] [--zoom-to:1.8] lg:[--zoom-from:1] lg:[--zoom-to:1.3]"
-                />
+              <div className="overflow-hidden rounded-3xl shadow-card">
+                {/* Two layers: a still, blurred backdrop and the cut-out person walking toward the viewer. */}
+                <div className="relative aspect-[4/5] origin-[56%_45%] scale-[1.45] lg:scale-100">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/profile-bg.jpg"
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover object-[50%_30%]"
+                  />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={personalInfo.profileImage}
+                    alt={personalInfo.name}
+                    width={854}
+                    height={1280}
+                    className="absolute inset-0 h-full w-full animate-walk-forward object-cover object-[50%_30%] [transform-origin:56%_82%]"
+                  />
+                </div>
               </div>
             </div>
             <figcaption className="eyebrow mt-4 hidden lg:ml-auto lg:block lg:max-w-sm">

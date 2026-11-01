@@ -32,7 +32,7 @@ export const personalInfo: PersonalInfo = {
   address: "Jl Tanah Abang 5 No.54 F, RT.14/RW.2 Petojo Sel., Kecamatan Gambir, Kota Jakarta Pusat DKI Jakarta",
   githubUrl: "https://github.com/ridhodp",
   linkedinUrl: "https://www.linkedin.com/in/m-ridho-naufal-dwinanda-pakpahan-9296662a2/",
-  profileImage: "/profile-wisuda.jpg",
+  profileImage: "/profile-person.png",
   cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P, S.Kom.pdf",
 };
 

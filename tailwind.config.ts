@@ -29,20 +29,17 @@ const config: Config = {
         },
       },
       keyframes: {
-        // Cheeky sway: a small tilt and bob, pivoting from the bottom.
-        swagger: {
-          "0%, 100%": { transform: "rotate(-2deg) translateY(0)" },
-          "50%": { transform: "rotate(2deg) translateY(-8px)" },
-        },
-        // Slow push-in toward the face, so the photo seems to step forward.
-        "step-forward": {
-          "0%": { transform: "scale(var(--zoom-from, 1))" },
-          "100%": { transform: "scale(var(--zoom-to, 1.3))" },
+        // The cut-out person grows from the feet with a small bob per step, so they walk toward the viewer.
+        "walk-forward": {
+          "0%": { transform: "translateY(0) scale(1)" },
+          "25%": { transform: "translateY(-1.2%) scale(1.06)" },
+          "50%": { transform: "translateY(0) scale(1.12)" },
+          "75%": { transform: "translateY(-1.2%) scale(1.18)" },
+          "100%": { transform: "translateY(0) scale(1.24)" },
         },
       },
       animation: {
-        "step-forward": "step-forward 9s ease-in-out infinite alternate",
-        swagger: "swagger 4s ease-in-out infinite",
+        "walk-forward": "walk-forward 6s ease-in-out infinite alternate",
       },
       boxShadow: {
         card: "var(--card-shadow)",
