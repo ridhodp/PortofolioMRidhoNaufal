@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center lg:gap-12">
           <div className="text-center lg:col-span-7 lg:text-left">
             {/* Two fixed lines, sized to fit: "M. Ridho Naufal" / "Dwinanda Pakpahan, S.Kom". */}
-            <h1 className="text-[clamp(1.45rem,7vw,1.95rem)] font-semibold leading-[1.15] tracking-tight text-text-primary sm:text-[2.6rem] lg:text-[2.75rem] xl:text-5xl">
+            <h1 className="text-[clamp(1.45rem,7vw,1.95rem)] font-semibold leading-[1.15] tracking-tight text-text-primary sm:text-[2.6rem] lg:text-[2.75rem]">
               <span className="block whitespace-nowrap">
                 {personalInfo.name.split(" ").slice(0, 3).join(" ")}
               </span>
