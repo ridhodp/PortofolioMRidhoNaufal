@@ -22,8 +22,13 @@ export default function Education() {
               <h3 className="flex flex-wrap items-center gap-x-3 gap-y-2 text-lg font-semibold leading-snug text-text-primary">
                 {edu.institution}
                 {edu.predicate && (
-                  <span className="rounded border border-accent/40 px-2 py-0.5 text-xs font-medium text-accent">
+                  // Styled after the real graduation sash: orange band, navy edges, blue capitals, gold medal.
+                  <span className="inline-flex items-center gap-1.5 border-y-[3px] border-[#3a3d93] bg-[#f47a3c] py-0.5 pl-2.5 pr-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#1f2676]">
                     {edu.predicate}
+                    <span
+                      aria-hidden="true"
+                      className="h-3.5 w-3.5 rounded-full bg-[radial-gradient(circle_at_35%_35%,#fff6c8,#e6c35c_45%,#a9802a)] ring-1 ring-[#a9802a]/60"
+                    />
                   </span>
                 )}
               </h3>
