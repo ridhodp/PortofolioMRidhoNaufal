@@ -29,6 +29,11 @@ const config: Config = {
         },
       },
       keyframes: {
+        // Cheeky sway: a small tilt and bob, pivoting from the bottom.
+        swagger: {
+          "0%, 100%": { transform: "rotate(-2deg) translateY(0)" },
+          "50%": { transform: "rotate(2deg) translateY(-8px)" },
+        },
         // Slow push-in toward the face, so the photo seems to step forward.
         "step-forward": {
           "0%": { transform: "scale(var(--zoom-from, 1))" },
@@ -37,6 +42,7 @@ const config: Config = {
       },
       animation: {
         "step-forward": "step-forward 9s ease-in-out infinite alternate",
+        swagger: "swagger 4s ease-in-out infinite",
       },
       boxShadow: {
         card: "var(--card-shadow)",

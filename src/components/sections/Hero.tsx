@@ -36,18 +36,16 @@ export default function Hero() {
           </div>
 
           <figure className="order-first lg:order-none lg:col-span-5">
-            <div className="mx-auto w-40 sm:w-48 lg:mr-0 lg:w-full lg:max-w-sm">
-              <div className="rounded-2xl bg-background-secondary p-2 shadow-card ring-1 ring-accent/40">
-                <div className="overflow-hidden rounded-xl">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={personalInfo.profileImage}
-                    alt={personalInfo.name}
-                    width={854}
-                    height={1280}
-                    className="aspect-square w-full animate-step-forward object-cover object-[50%_30%] [transform-origin:54%_34%] [--zoom-from:1.6] [--zoom-to:2] lg:aspect-[4/5] lg:[--zoom-from:1] lg:[--zoom-to:1.3]"
-                  />
-                </div>
+            <div className="mx-auto w-60 sm:w-72 lg:mr-0 lg:w-full lg:max-w-sm">
+              <div className="origin-bottom animate-swagger overflow-hidden rounded-3xl shadow-card">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={personalInfo.profileImage}
+                  alt={personalInfo.name}
+                  width={854}
+                  height={1280}
+                  className="aspect-[4/5] w-full animate-step-forward object-cover object-[50%_30%] [transform-origin:54%_34%] [--zoom-from:1.2] [--zoom-to:1.5] lg:[--zoom-from:1] lg:[--zoom-to:1.3]"
+                />
               </div>
             </div>
             <figcaption className="eyebrow mt-4 hidden lg:ml-auto lg:block lg:max-w-sm">
