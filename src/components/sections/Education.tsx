@@ -19,11 +19,11 @@ export default function Education() {
             </p>
 
             <div className="min-w-0">
-              <h3 className="flex flex-wrap items-center gap-x-3 gap-y-2 text-lg font-semibold leading-snug text-text-primary">
-                {edu.institution}
+              <h3 className="flex items-center gap-2.5 text-lg font-semibold leading-snug text-text-primary sm:gap-3">
+                <span className="min-w-0">{edu.institution}</span>
                 {edu.predicate && (
                   // Styled after the real graduation sash: orange band, navy edges, blue capitals, gold medal.
-                  <span className="inline-flex items-center gap-1.5 border-y-[3px] border-[#3a3d93] bg-[#f47a3c] py-0.5 pl-2.5 pr-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#1f2676]">
+                  <span className="inline-flex shrink-0 items-center gap-1.5 border-y-[3px] border-[#3a3d93] bg-[#f47a3c] py-0.5 pl-2 pr-1.5 text-[10px] font-extrabold uppercase tracking-[0.14em] sm:pl-2.5 sm:text-[11px] sm:tracking-[0.18em] text-[#1f2676]">
                     {edu.predicate}
                     <span
                       aria-hidden="true"
