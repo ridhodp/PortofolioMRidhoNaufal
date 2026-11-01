@@ -223,6 +223,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       "Artificial Intelligence (AI)",
       "Large Language Models (LLM)",
+      "Python",
       "Google Cloud Platform (GCP)",
       "Cloud Computing",
       "Machine Learning",
@@ -234,6 +235,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Data & Analytics",
     icon: "Database",
     skills: [
+      "Python",
       "Analisis Data",
       "Data Analyst",
       "Data Visualisasi",
