@@ -36,15 +36,15 @@ export default function Hero() {
           </div>
 
           <figure className="order-first lg:order-none lg:col-span-5">
-            <div className="mx-auto w-40 sm:w-48 lg:mr-0 lg:w-full lg:max-w-sm">
+            <div className="mx-auto w-64 sm:w-72 lg:mr-0 lg:w-full lg:max-w-sm">
               <div className="rounded-2xl bg-background-secondary p-2 shadow-card ring-1 ring-accent/40">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={personalInfo.profileImage}
                   alt={personalInfo.name}
-                  width={480}
-                  height={600}
-                  className="aspect-square w-full rounded-xl object-cover object-top lg:aspect-[4/5]"
+                  width={670}
+                  height={838}
+                  className="aspect-[4/5] w-full rounded-xl object-cover"
                 />
               </div>
             </div>
