@@ -36,26 +36,16 @@ export default function Hero() {
           </div>
 
           <figure className="order-first lg:order-none lg:col-span-5">
-            <div className="mx-auto w-60 sm:w-72 lg:mr-0 lg:w-full lg:max-w-sm">
-              <div className="overflow-hidden rounded-3xl shadow-card">
-                {/* Two layers: a still, blurred backdrop and the cut-out person walking toward the viewer. */}
-                <div className="relative aspect-[4/5] origin-[56%_45%] scale-[1.45] lg:scale-100">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/profile-bg.jpg"
-                    alt=""
-                    aria-hidden="true"
-                    className="absolute inset-0 h-full w-full object-cover object-[50%_30%]"
-                  />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={personalInfo.profileImage}
-                    alt={personalInfo.name}
-                    width={854}
-                    height={1280}
-                    className="absolute inset-0 h-full w-full animate-walk-forward object-cover object-[50%_30%] [transform-origin:56%_82%]"
-                  />
-                </div>
+            <div className="mx-auto w-40 sm:w-48 lg:mr-0 lg:w-full lg:max-w-sm">
+              <div className="rounded-2xl bg-background-secondary p-2 shadow-card ring-1 ring-accent/40">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={personalInfo.profileImage}
+                  alt={personalInfo.name}
+                  width={480}
+                  height={600}
+                  className="aspect-square w-full rounded-xl object-cover object-top lg:aspect-[4/5]"
+                />
               </div>
             </div>
             <figcaption className="eyebrow mt-4 hidden lg:ml-auto lg:block lg:max-w-sm">
