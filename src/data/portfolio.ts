@@ -289,7 +289,7 @@ export const education: Education[] = [
 export const certificates: Certificate[] = [
   {
     id: "lulus-tepat-waktu",
-    title: "Sertifikat Lulusan Tepat Waktu",
+    title: "Sertifikat Lulus Tepat Waktu",
     issuer: "Fakultas Teknologi Industri, Universitas Ahmad Dahlan",
     year: "29 Oktober 2026",
     url: "/certificates/Sertifikat Lulus Tepat Waktu.pdf",
