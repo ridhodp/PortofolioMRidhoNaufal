@@ -162,7 +162,7 @@ export const projects: Project[] = [
       "Vulnerability Assessment & Scanning",
       "Penetration Testing Methodology",
       "Web Application Security Hardening",
-      "Analisis Risiko & Laporan Rekomendasi",
+      "Analisis Risiko & Laporan Rekomendasi (detail teknologi tersedia sesuai permintaan)",
     ],
     repositoryUrl: "#",
     liveDemoUrl: "#",

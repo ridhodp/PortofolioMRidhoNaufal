@@ -31,10 +31,6 @@ export default function Projects() {
           </li>
         ))}
       </ol>
-
-      <p className="mt-10 text-sm text-text-muted">
-        Detail teknologi tersedia sesuai permintaan.
-      </p>
     </Section>
   );
 }
