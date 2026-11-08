@@ -153,7 +153,7 @@ export const projects: Project[] = [
   },
   {
     id: "web-pentest-research",
-    title: "Analisis Keamanan Website Melalui Penetration Testing",
+    title: "Analisis Keamanan Website SMAN 1 Pundong Menggunakan Metode PTES",
     category: "Cyber Security & Research",
     organization: "Tugas Akhir S1 Teknik Informatika UAD",
     description:
