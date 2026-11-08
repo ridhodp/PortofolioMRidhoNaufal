@@ -33,7 +33,7 @@ export default function Projects() {
       </ol>
 
       <p className="mt-10 text-sm text-text-muted">
-        Detail teknologi tersedia atas permintaan.
+        Detail teknologi tersedia pada permintaan.
       </p>
     </Section>
   );

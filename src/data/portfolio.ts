@@ -282,7 +282,7 @@ export const education: Education[] = [
     gpa: "82.32",
     gpaScale: "100",
     description:
-      "Menyelesaikan pendidikan tingkat menengah atas jurusan IPA dengan nilai akhir rata-rata 82.32.",
+      "Menyelesaikan pendidikan tingkat menengah pada jurusan IPA dengan nilai akhir rata-rata 82.32.",
   },
 ];
 
