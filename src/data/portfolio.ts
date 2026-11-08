@@ -288,6 +288,14 @@ export const education: Education[] = [
 
 export const certificates: Certificate[] = [
   {
+    id: "lulus-tepat-waktu",
+    title: "Sertifikat Lulusan Tepat Waktu",
+    issuer: "Fakultas Teknologi Industri, Universitas Ahmad Dahlan",
+    year: "29 Oktober 2026",
+    url: "/certificates/Sertifikat Lulus Tepat Waktu.pdf",
+    type: "certification",
+  },
+  {
     id: "toefl",
     title: "Sertifikat TOEFL Ahmad Dahlan Language Center",
     issuer: "Ahmad Dahlan Language Center (ADLC)",
