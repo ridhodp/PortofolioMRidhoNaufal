@@ -173,17 +173,18 @@ export const projects: Project[] = [
 export const research: Research[] = [
   {
     id: "security-analysis",
-    title: "Website Security Analysis Using Penetration Testing",
+    title: "Analisis Keamanan Website SMAN 1 Pundong Menggunakan Metode PTES",
     target: "Website SMAN 1 Pundong",
     field: "Keamanan Informasi (Information Security)",
     focus: [
+      "PTES (Penetration Testing Execution Standard)",
       "Penetration Testing",
       "Web Application Security",
       "Vulnerability Assessment",
       "Security Analysis & Hardening",
     ],
     description:
-      "Melakukan penelitian tugas akhir di bidang Keamanan Informasi, khususnya Penetration Testing untuk menganalisis keamanan aplikasi website, menguji postur pertahanan terhadap eksploitasi celah, dan merancang skema mitigasi proteksi data.",
+      "Melakukan penelitian tugas akhir di bidang Keamanan Informasi, khususnya Penetration Testing dengan metode PTES (Penetration Testing Execution Standard) untuk menganalisis keamanan aplikasi website SMAN 1 Pundong, menguji postur pertahanan terhadap eksploitasi celah, dan merancang skema mitigasi proteksi data.",
     year: "2025 - 2026",
   },
 ];
