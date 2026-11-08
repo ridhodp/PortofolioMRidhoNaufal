@@ -271,7 +271,7 @@ export const education: Education[] = [
     gpaScale: "4.00",
     predicate: "Cumlaude",
     description:
-      "Lulus dengan predikat Cumlaude. Berfokus pada Web Development, Keamanan Informasi, Cloud Computing, dan Sistem Terdistribusi. Berpengalaman sebagai Asisten Laboratorium Praktikum.",
+      "Lulus dengan predikat Cumlaude. Berfokus pada Web Development, Keamanan Informasi, Cloud Computing, Sistem Terdistribusi, serta Artificial Intelligence (AI) dan Data. Berpengalaman sebagai Asisten Laboratorium Praktikum, Junior Web Developer, dan AI Engineer.",
   },
   {
     id: "sman-1-karimun",
