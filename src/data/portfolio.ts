@@ -293,7 +293,7 @@ export const certificates: Certificate[] = [
     title: "Sertifikat Lulus Tepat Waktu",
     issuer: "Fakultas Teknologi Industri, Universitas Ahmad Dahlan",
     year: "29 Oktober 2026",
-    url: "/certificates/Sertifikat Lulus Tepat Waktu.pdf",
+    url: "/certificates/Sertifikat Lulus Tepat Waktu - M.Ridho Naufal Dwinanda Pakpahan.pdf",
     type: "certification",
   },
   {
