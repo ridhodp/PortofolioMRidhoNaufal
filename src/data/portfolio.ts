@@ -33,7 +33,7 @@ export const personalInfo: PersonalInfo = {
   githubUrl: "https://github.com/ridhodp",
   linkedinUrl: "https://www.linkedin.com/in/m-ridho-naufal-dwinanda-pakpahan-9296662a2/",
   profileImage: "/profile-wisuda.jpg",
-  cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P, S.Kom.pdf",
+  cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P, S.Kom.pdf?v=20261120",
 };
 
 export const navItems: NavItem[] = [
@@ -342,7 +342,7 @@ export const certificates: Certificate[] = [
     issuer: "Red Team Leaders Cybersecurity Training",
     year: "Oktober 2026",
     validity: "Oktober 2026",
-    url: "/certificates/CCEP Sertifikat - M.Ridho Naufal D.P S.Kom.pdf",
+    url: "/certificates/CCEP Sertifikat - M.Ridho Naufal D.P S.Kom.pdf?v=20261120",
     type: "certification",
   },
   {
