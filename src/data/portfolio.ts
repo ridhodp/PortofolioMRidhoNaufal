@@ -59,10 +59,14 @@ export const experiences: Experience[] = [
     description:
       "Peserta Maganghub Batch 2 yang berfokus pada digitalisasi perencanaan dan kemitraan, serta terlibat dalam perancangan dan pengembangan aplikasi berbasis AI LLM untuk otomasi review dokumen pemerintah.",
     responsibilities: [
-      "Membantu digitalisasi perencanaan dan penganggaran project kementerian",
-      "Membuat dan mengembangkan project Website berbasis AI LLM untuk review Dokumen TOR dan RAB",
-      "Menelaah aspek teknis kebijakan digitalisasi perencanaan dan kemitraan",
-      "Berkolaborasi dengan tim perencana dalam optimalisasi integrasi data dan efisiensi birokrasi",
+      "Membangun antarmuka web dengan React dan TypeScript, dibundel menggunakan Vite dan ditata dengan Tailwind CSS.",
+      "Menampilkan dokumen PDF dan menyorot kutipan bukti hasil AI langsung di halaman menggunakan PDF.js.",
+      "Mengembangkan REST API dan worker pemrosesan antrean dengan Python dan FastAPI.",
+      "Memodelkan dan mengelola basis data menggunakan SQLAlchemy beserta migrasi skemanya.",
+      "Menyimpan data aplikasi dan vektor embedding di PostgreSQL + pgvector, lalu menggabungkan pencarian semantik dan pencarian kata kunci (hybrid search).",
+      "Menilai setiap item checklist, membaca tabel dan gambar dalam dokumen, serta menyusun rekomendasi perbaikan menggunakan model vision-language Qwen3-VL.",
+      "Mengubah potongan teks dokumen menjadi embedding multibahasa dengan BGE-M3 untuk menemukan bagian yang relevan dengan setiap item checklist.",
+      "Menyajikan model AI secara lokal/offline melalui vLLM Ollama Qwen3-VL dan BGE-M3.",
     ],
     type: "work",
   },
