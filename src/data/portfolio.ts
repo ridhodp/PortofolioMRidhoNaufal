@@ -66,7 +66,7 @@ export const experiences: Experience[] = [
       "Menyimpan data aplikasi dan vektor embedding di PostgreSQL + pgvector, lalu menggabungkan pencarian semantik dan pencarian kata kunci (hybrid search).",
       "Menilai setiap item checklist, membaca tabel dan gambar dalam dokumen, serta menyusun rekomendasi perbaikan menggunakan model vision-language Qwen3-VL.",
       "Mengubah potongan teks dokumen menjadi embedding multibahasa dengan BGE-M3 untuk menemukan bagian yang relevan dengan setiap item checklist.",
-      "Menyajikan model AI secara lokal/offline melalui vLLM Ollama Qwen3-VL dan BGE-M3.",
+      "Menyajikan model AI secara lokal/offline melalui vLLM.",
     ],
     type: "work",
   },
