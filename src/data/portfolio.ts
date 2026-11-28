@@ -29,11 +29,11 @@ export const personalInfo: PersonalInfo = {
   phone: "085229989866",
   phoneUrl: "https://wa.me/6285229989866",
   location: "Tanah Abang, Kota Administrasi Jakarta Pusat",
-  address: "Jl Tanah Abang 5 No.54 F, RT.14/RW.2 Petojo Sel., Kecamatan Gambir, Kota Jakarta Pusat DKI Jakarta",
+  address: "Jl. Tanah Abang 5 No.54F, RT.14/RW.2, Petojo Selatan, Kecamatan Gambir, Kota Jakarta Pusat",
   githubUrl: "https://github.com/ridhodp",
   linkedinUrl: "https://www.linkedin.com/in/m-ridho-naufal-dwinanda-pakpahan-9296662a2/",
   profileImage: "/profile-wisuda.jpg",
-  cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P, S.Kom.pdf?v=20261120b",
+  cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P, S.Kom.pdf?v=20261128",
 };
 
 export const navItems: NavItem[] = [
@@ -64,7 +64,7 @@ export const experiences: Experience[] = [
       "Mengembangkan REST API dan worker pemrosesan antrean dengan Python dan FastAPI.",
       "Memodelkan dan mengelola basis data menggunakan SQLAlchemy beserta migrasi skemanya.",
       "Menyimpan data aplikasi dan vektor embedding di PostgreSQL + pgvector, lalu menggabungkan pencarian semantik dan pencarian kata kunci (hybrid search).",
-      "Menilai setiap item checklist, membaca tabel dan gambar dalam dokumen, serta menyusun rekomendasi perbaikan menggunakan model vision-language Qwen3-VL.",
+      "Menilai setiap item checklist, membaca tabel dan gambar dalam dokumen, serta menyusun rekomendasi perbaikan.",
       "Mengubah potongan teks dokumen menjadi embedding multibahasa dengan BGE-M3 untuk menemukan bagian yang relevan dengan setiap item checklist.",
       "Menyajikan model AI secara lokal/offline melalui vLLM.",
     ],
@@ -73,15 +73,14 @@ export const experiences: Experience[] = [
   {
     id: "lab-assistant",
     role: "Asisten Laboratorium Praktikum Sistem Terdistribusi",
-    organization: "Laboratorium Informatika Universitas Ahmad Dahlan",
+    organization: "Laboratorium Informatika UAD",
     location: "Kab. Bantul, D.I. Yogyakarta, Indonesia",
     period: "Maret 2026 - Juli 2026",
     description:
       "Membantu dosen dan memfasilitasi mahasiswa dalam pelaksanaan praktikum sistem terdistribusi, memahami konsep arsitektur jaringan, client-server, dan implementasi distributed computing.",
     responsibilities: [
-      "Membantu dosen mengawasi jalannya praktikum Sistem Terdistribusi",
-      "Mendampingi praktikan atau mahasiswa praktikum memahami konsep serta implementasi sistem terdistribusi",
-      "Membimbing mahasiswa dalam pemecahan masalah (troubleshooting) kode dan arsitektur sistem",
+      "Membantu dosen mengawasi jalannya praktikum.",
+      "Mendampingi praktikan atau mahasiswa praktikum.",
     ],
     type: "academic",
   },
@@ -94,10 +93,11 @@ export const experiences: Experience[] = [
     description:
       "Mengembangkan Sistem Informasi Buku Tamu Digital berbasis website di Bidang TIK untuk memodernisasi pencatatan data tamu kedinasan.",
     responsibilities: [
-      "Membuat Sistem Buku Tamu Digital Berbasis Website dengan menerapkan arsitektur CRUD",
-      "Mengintegrasikan fitur filter data tamu dinamis per tahun dan per bulan",
-      "Merancang, membangun, dan mengelola database data tamu kedinasan",
-      "Mengintegrasikan fitur ekspor rekapitulasi data tamu ke format file PDF",
+      "Membangun buku tamu digital yang menggantikan pencatatan kunjungan manual.",
+      "Merancang database MySQL untuk mengelola data kunjungan tamu, akun pengguna, dan konten website.",
+      "Membuat laporan kunjungan dengan filter waktu dan bidang, yang bisa diekspor ke PDF.",
+      "Mengembangkan panel admin untuk mengubah isi website tanpa mengubah kode.",
+      "Menerapkan login dengan dua tingkat pengguna (Admin dan User).",
     ],
     type: "internship",
   },
@@ -145,11 +145,11 @@ export const projects: Project[] = [
     description:
       "Sistem informasi buku tamu digital berbasis web yang diterapkan di Dinas Komunikasi, Informatika, Statistik dan Persandian Kab. Karimun untuk mempermudah pencatatan, pengarsipan, penyaringan, dan pelaporan kunjungan dinas secara paperless.",
     features: [
-      "Implementasi CRUD Lengkap",
-      "Filter Data Tamu Per Bulan & Per Tahun",
-      "Fitur Cetak & Ekspor Laporan PDF",
-      "Manajemen Database Terstruktur",
-      "Pencarian & Arsip Tamu Instan",
+      "Pengganti Pencatatan Kunjungan Manual",
+      "Database MySQL (Tamu, Akun Pengguna & Konten Website)",
+      "Laporan Kunjungan dengan Filter Waktu & Bidang + Ekspor PDF",
+      "Panel Admin untuk Mengubah Isi Website Tanpa Kode",
+      "Login Dua Tingkat Pengguna (Admin & User)",
     ],
     repositoryUrl: "#",
     liveDemoUrl: "#",
@@ -204,7 +204,9 @@ export const skillCategories: SkillCategory[] = [
       "Building Website",
       "CRUD Development",
       "Database Management",
-      "Frontend & Backend",
+      "Frontend Developer",
+      "Backend Developer",
+      "Fullstack Developer",
     ],
   },
   {
@@ -227,6 +229,7 @@ export const skillCategories: SkillCategory[] = [
     icon: "Cloud",
     skills: [
       "Artificial Intelligence (AI)",
+      "AI Engineer",
       "Large Language Models (LLM)",
       "Python",
       "Google Cloud Platform (GCP)",
@@ -282,7 +285,7 @@ export const education: Education[] = [
     id: "sman-1-karimun",
     institution: "SMAN 1 Karimun",
     degree: "SMA / Sederajat",
-    field: "MIPA (Matematika dan Ilmu Pengetahuan Alam) | Kab. Karimun, Kepulauan Riau",
+    field: "IPA | Kab. Karimun, Kepulauan Riau",
     period: "2020 - 2022",
     gpa: "82.32",
     gpaScale: "100",
