@@ -342,7 +342,7 @@ export const certificates: Certificate[] = [
     issuer: "Red Team Leaders Cybersecurity Training",
     year: "Oktober 2026",
     validity: "Oktober 2026",
-    url: "/certificates/CCEP Sertifikat - M.Ridho Naufal D.P S.Kom.pdf?v=20261120b",
+    url: "/certificates/CCEP Sertifikat - M.Ridho Naufal D.P S.Kom.pdf",
     type: "certification",
   },
   {
