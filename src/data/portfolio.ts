@@ -33,7 +33,7 @@ export const personalInfo: PersonalInfo = {
   githubUrl: "https://github.com/ridhodp",
   linkedinUrl: "https://www.linkedin.com/in/m-ridho-naufal-dwinanda-pakpahan-9296662a2/",
   profileImage: "/profile-wisuda.jpg",
-  cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P, S.Kom.pdf?v=20261128",
+  cvUrl: "/CV-Fresh Graduate S1 Teknik Informatika-M.Ridho Naufal D.P, S.Kom.pdf?v=20261128b",
 };
 
 export const navItems: NavItem[] = [
@@ -93,7 +93,7 @@ export const experiences: Experience[] = [
     description:
       "Mengembangkan Sistem Informasi Buku Tamu Digital berbasis website di Bidang TIK untuk memodernisasi pencatatan data tamu kedinasan.",
     responsibilities: [
-      "Membangun buku tamu digital yang menggantikan pencatatan kunjungan manual.",
+      "Membangun buku tamu digital dengan arsitektur CRUD yang menggantikan pencatatan kunjungan manual.",
       "Merancang database MySQL untuk mengelola data kunjungan tamu, akun pengguna, dan konten website.",
       "Membuat laporan kunjungan dengan filter waktu dan bidang, yang bisa diekspor ke PDF.",
       "Mengembangkan panel admin untuk mengubah isi website tanpa mengubah kode.",
@@ -145,7 +145,7 @@ export const projects: Project[] = [
     description:
       "Sistem informasi buku tamu digital berbasis web yang diterapkan di Dinas Komunikasi, Informatika, Statistik dan Persandian Kab. Karimun untuk mempermudah pencatatan, pengarsipan, penyaringan, dan pelaporan kunjungan dinas secara paperless.",
     features: [
-      "Pengganti Pencatatan Kunjungan Manual",
+      "Arsitektur CRUD Pengganti Pencatatan Kunjungan Manual",
       "Database MySQL (Tamu, Akun Pengguna & Konten Website)",
       "Laporan Kunjungan dengan Filter Waktu & Bidang + Ekspor PDF",
       "Panel Admin untuk Mengubah Isi Website Tanpa Kode",
